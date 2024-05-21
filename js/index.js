@@ -1,3 +1,2 @@
-let singleQuoteString = 'Hello';
-let doubleQuoteString = "Hello";
-let backtickString = `Hello`;
+let symbolValue = Symbol("description");
+console.log(typeof symbolValue); // "symbol"
