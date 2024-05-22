@@ -7,31 +7,15 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script src='main.js' defer></script>
 </head>
 
 <body>
-    <header>...</header>
-    <main>
-        <article>
-            ...
-            <footer>
-                <p>아티클 푸터: 저자 정보</p>
-            </footer>
-        </article>
-    </main>
-
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2024 My website. All rights reserved.</p>
-    </footer>
-
+    <input type="text" id="input1" />
+    <input type="text" id="input2" />
+    <button onclick="calculateSum()">Calculate</button>
+    <div id="result"></div>
+    <div id="history"></div>
 </body>
 
 </html>
