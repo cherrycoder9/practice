@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+td {
+    border: 3px solid black;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.end {
+    background-color: lightgreen;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
