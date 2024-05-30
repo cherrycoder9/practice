@@ -2,24 +2,32 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Tic Tac Toe</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
 </head>
 
 <body>
-    <div id="board">
-        <div class="cell" id="cell-0" onclick="play(0)"></div>
-        <div class="cell" id="cell-1" onclick="play(1)"></div>
-        <div class="cell" id="cell-2" onclick="play(2)"></div>
-        <div class="cell" id="cell-3" onclick="play(3)"></div>
-        <div class="cell" id="cell-4" onclick="play(4)"></div>
-        <div class="cell" id="cell-5" onclick="play(5)"></div>
-        <div class="cell" id="cell-6" onclick="play(6)"></div>
-        <div class="cell" id="cell-7" onclick="play(7)"></div>
-        <div class="cell" id="cell-8" onclick="play(8)"></div>
-    </div>
-    <p id="status"></p>
-    <button onclick="reset()">Reset</button>
-    <script src="main.js"></script>
+    <table id="board">
+        <tr>
+            <td onclick="makeMove(0, 0)"></td>
+            <td onclick="makeMove(0, 1)"></td>
+            <td onclick="makeMove(0, 2)"></td>
+        </tr>
+        <tr>
+            <td onclick="makeMove(1, 0)"></td>
+            <td onclick="makeMove(1, 1)"></td>
+            <td onclick="makeMove(1, 2)"></td>
+        </tr>
+        <tr>
+            <td onclick="makeMove(2, 0)"></td>
+            <td onclick="makeMove(2, 1)"></td>
+            <td onclick="makeMove(2, 2)"></td>
+        </tr>
+    </table>
+
+
 </body>
 
 </html>
