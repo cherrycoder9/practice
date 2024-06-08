@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>달력 할일 목록</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <select id="monthSelector"></select>
+            </div>
+            <div class="calendar-body" id="calendarBody"></div>
+        </div>
+
+        <div class="todo-container">
+            <h2 id="selectedDate"></h2>
+            <input type="text" id="todoInput" placeholder="할일 입력">
+            <input type="color" id="colorPicker">
+            <button id="addTodoButton">추가</button>
+            <ul id="todoList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
