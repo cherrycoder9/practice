@@ -1,3 +1,4 @@
+// 변수 선언
 #include <iostream>
 
 using namespace std;
