@@ -9,7 +9,7 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    int MAX = 100;
+    const int MAX = 100;  // 상수 선언시 const 사용
     int value = 50;
     value += MAX;
 
