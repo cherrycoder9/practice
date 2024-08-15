@@ -1,6 +1,6 @@
-// »ç¿ëÀÚ Á¤ÀÇ ÀÚ·áÇü
-// ±¸Á¶Ã¼, °ø¿ëÃ¼, ¿­°ÅÇü µîÀ» »ç¿ëÇØ »õ·Î¿î ÀÚ·áÇüÀ» Á¤ÀÇÇÔ
-// ±¸Á¶Ã¼ (struct): ¿©·¯ ´Ù¸¥ ÀÚ·áÇüÀ» ÇÏ³ªÀÇ ÀÚ·áÇüÀ¸·Î ¹­À½
+// ì‚¬ìš©ìž ì •ì˜ ìžë£Œí˜•
+// êµ¬ì¡°ì²´, ê³µìš©ì²´, ì—´ê±°í˜• ë“±ì„ ì‚¬ìš©í•´ ìƒˆë¡œìš´ ìžë£Œí˜•ì„ ì •ì˜í•¨
+// êµ¬ì¡°ì²´ (struct): ì—¬ëŸ¬ ë‹¤ë¥¸ ìžë£Œí˜•ì„ í•˜ë‚˜ì˜ ìžë£Œí˜•ìœ¼ë¡œ ë¬¶ìŒ
 
 #include <iostream>
 using namespace std;
@@ -12,12 +12,12 @@ struct Person {
 };
 
 int main(int argc, char const *argv[]) {
-    // ±¸Á¶Ã¼ º¯¼ö ¼±¾ð ¹× ÃÊ±âÈ­
+    /// êµ¬ì¡°ì²´ ë³€ìˆ˜ ì„ ì–¸ ë° ì´ˆê¸°í™”
     Person person1 = {"John", 25, 175.5};
 
-    // ±¸Á¶Ã¼ ¸â¹ö¿¡ Á¢±Ù
-    cout << "ÀÌ¸§: " << person1.name << endl;
-    cout << "³ªÀÌ: " << person1.age << endl;
-    cout << "Å°: " << person1.height << endl;
+    // êµ¬ì¡°ì²´ ë©¤ë²„ì— ì ‘ê·¼
+    cout << "ì´ë¦„: " << person1.name << endl;
+    cout << "ë‚˜ì´: " << person1.age << endl;
+    cout << "í‚¤: " << person1.height << endl;
     return 0;
 }

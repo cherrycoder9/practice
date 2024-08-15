@@ -1,4 +1,5 @@
-// ¿­°ÅÇü (enum)
+// ì—´ê±°í˜• (enum)
+// ìƒìˆ˜ ì§‘í•©ì„ ì •ì˜í•  ë•Œ ì‚¬ìš©í•¨
 #include <iostream>
 using namespace std;
 
@@ -8,7 +9,7 @@ int main(int argc, char const *argv[]) {
     Color myColor = GREEN;
 
     if (myColor == GREEN) {
-        cout << "»ö»ó: " << GREEN << endl;  // 1
+        cout << "ìƒ‰ìƒ: " << GREEN << endl;  // 1
     }
 
     return 0;
