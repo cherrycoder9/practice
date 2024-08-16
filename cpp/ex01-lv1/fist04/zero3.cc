@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    for (size_t i = 1; i <= 20; i++) {
+    for (int i = 1; i <= 20; i++) {
         if (i % 10 == 0) {
             continue;
         }

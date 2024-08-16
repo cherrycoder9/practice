@@ -9,7 +9,9 @@ int main(int argc, char const *argv[]) {
     int sum = 0;
     cin >> count;
 
-    for (size_t i = 1; i <= count; i++) {
+    // size_t는 주로 배열의 인덱스와 같이 크기 값을 다룰때 사용
+    // for (size_t i = 1; i <= count; i++) {
+    for (int i = 1; i <= count; i++) {
         sum += i;
     }
 
