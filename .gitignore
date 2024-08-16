@@ -1,4 +1,7 @@
 **/*.exe
 **/*.out
 **/*.o
+**/*.pdb
 **/node_modules/
+**/target/
+**/*.lock

@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "rust/ex01-lv1/fist01",
+]
