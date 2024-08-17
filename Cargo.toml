@@ -1,4 +1,4 @@
 [workspace]
 members = [
-    "rust/ex01-lv1/fist01",
+    "rust/ex01-lv1/fist01", "rust/ex01-lv1/fist02",
 ]
