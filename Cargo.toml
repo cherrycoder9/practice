@@ -1,5 +1,6 @@
 [workspace]
+resolver = "2"
 members = [ 
     "rust/ex01-lv1/fist01", 
-    "rust/ex01-lv1/fist02",
+    "rust/ex01-lv1/fist02", "rust/ex01-lv1/fist03",
 ]
