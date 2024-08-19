@@ -1,6 +1,7 @@
 use zero1::Person;
 
 mod zero1;
+mod zero2;
 fn main() {
     // 구조체 인스턴스 생성
     let mut p = Person {
@@ -17,4 +18,7 @@ fn main() {
     p.age = 40;
     // 출력
     println!("이름: {}, 나이: {}, 이메일: {}", p.name, p.age, p.email);
+
+    // 메서드 호출
+    println!("{}", p.greeting());
 }
