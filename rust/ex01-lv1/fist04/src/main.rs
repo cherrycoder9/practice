@@ -2,11 +2,13 @@ use zero1::Person;
 use zero2::Car;
 use zero3::Color;
 use zero4::AlwaysEqual;
+use zero5::Student;
 
 mod zero1;
 mod zero2;
 mod zero3;
 mod zero4;
+mod zero5;
 fn main() {
     // 구조체 인스턴스 생성
     let mut p = Person {
@@ -41,4 +43,15 @@ fn main() {
     let _unit_struct = AlwaysEqual;
     // 별다른 동작은 없지만 타입을 구분할 때 유용함
     println!("유닛 구조체 생성");
+
+    // Student 인스턴스 생성
+    let s = Student {
+        name: String::from("박하늬"),
+        student_id: String::from("409127891"),
+        grade: 2,
+    };
+    println!(
+        "이름: {}, 학번: {}, 학년: {}",
+        s.name, s.student_id, s.grade
+    );
 }
