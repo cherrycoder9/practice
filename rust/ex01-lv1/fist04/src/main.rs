@@ -3,12 +3,14 @@ use zero2::Car;
 use zero3::Color;
 use zero4::AlwaysEqual;
 use zero5::Student;
+use zero6::Rectangle;
 
 mod zero1;
 mod zero2;
 mod zero3;
 mod zero4;
 mod zero5;
+mod zero6;
 fn main() {
     // 구조체 인스턴스 생성
     let mut p = Person {
@@ -54,4 +56,7 @@ fn main() {
         "이름: {}, 학번: {}, 학년: {}",
         s.name, s.student_id, s.grade
     );
+
+    let r = Rectangle::new(3.5, 3.5);
+    println!("넓이: {}", r.area());
 }
