@@ -4,6 +4,7 @@ use zero3::Color;
 use zero4::AlwaysEqual;
 use zero5::Student;
 use zero6::Rectangle;
+use zero7::Circle;
 
 mod zero1;
 mod zero2;
@@ -11,6 +12,7 @@ mod zero3;
 mod zero4;
 mod zero5;
 mod zero6;
+mod zero7;
 fn main() {
     // 구조체 인스턴스 생성
     let mut p = Person {
@@ -59,4 +61,7 @@ fn main() {
 
     let r = Rectangle::new(3.5, 3.5);
     println!("넓이: {}", r.area());
+
+    let c = Circle::new(7.0);
+    println!("둘레: {}, 넓이: {}", c.circumference(), c.area());
 }
