@@ -1,4 +1,5 @@
 use zero1::Person;
+use zero2::Car;
 
 mod zero1;
 mod zero2;
@@ -21,4 +22,8 @@ fn main() {
 
     // 메서드 호출
     println!("{}", p.greeting());
+
+    // 연관 함수 호출로 구조체 인스턴스 생성
+    let c = Car::new(1986, String::from("KIA"), String::from("Avantte"));
+    println!("년도: {}, 회사: {}, 이름: {}", c.year, c.company, c.name);
 }
