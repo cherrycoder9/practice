@@ -1,10 +1,12 @@
 use zero1::Person;
 use zero2::Car;
 use zero3::Color;
+use zero4::AlwaysEqual;
 
 mod zero1;
 mod zero2;
 mod zero3;
+mod zero4;
 fn main() {
     // 구조체 인스턴스 생성
     let mut p = Person {
@@ -33,4 +35,10 @@ fn main() {
 
     // 필드에 인덱스로 접근
     println!("Red: {}, Green: {}, Blue: {}", black.0, black.1, black.2);
+
+    // 변수가 코드에서 사용되지 않을 것임을 컴파일러에 알리기 위해 변수앞에 _ 붙임
+    // 경고를 무시할 수 있음
+    let _unit_struct = AlwaysEqual;
+    // 별다른 동작은 없지만 타입을 구분할 때 유용함
+    println!("유닛 구조체 생성");
 }
