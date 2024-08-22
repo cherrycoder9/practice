@@ -13,5 +13,6 @@
         "utility": "cpp",
         "stdexcept": "cpp",
         "string": "cpp"
-    }
+    },
+    "python.analysis.autoImportCompletions": true
 }
