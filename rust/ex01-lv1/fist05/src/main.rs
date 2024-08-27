@@ -1,12 +1,13 @@
-use zero6::zero6;
+// use zero6::zero6;
 
-mod zero1;
-mod zero2;
-mod zero3;
-mod zero4;
-mod zero5;
-mod zero6;
-mod zero7;
+// mod zero1;
+// mod zero2;
+// mod zero3;
+// mod zero4;
+// mod zero5;
+// mod zero6;
+// mod zero7;
+mod zero8;
 
 fn main() {
     // zero1::ex_enum();
@@ -15,5 +16,6 @@ fn main() {
     // zero4::ex_enum4();
     // zero5::ex_enum5();
     // zero6();
-    zero7::main();
+    // zero7::main();
+    zero8::main();
 }
