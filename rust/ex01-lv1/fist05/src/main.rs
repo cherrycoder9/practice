@@ -6,6 +6,7 @@ mod zero3;
 mod zero4;
 mod zero5;
 mod zero6;
+mod zero7;
 
 fn main() {
     // zero1::ex_enum();
@@ -13,5 +14,6 @@ fn main() {
     // zero3::ex_enum3();
     // zero4::ex_enum4();
     // zero5::ex_enum5();
-    zero6();
+    // zero6();
+    zero7::main();
 }
