@@ -2,5 +2,5 @@
 resolver = "2"
 members = [ 
     "rust/ex01-lv1/fist01", 
-    "rust/ex01-lv1/fist02", "rust/ex01-lv1/fist03", "rust/ex01-lv1/fist04", "rust/ex01-lv1/fist05",
+    "rust/ex01-lv1/fist02", "rust/ex01-lv1/fist03", "rust/ex01-lv1/fist04", "rust/ex01-lv1/fist05", "rust/ex01-lv1/fist06",
 ]
