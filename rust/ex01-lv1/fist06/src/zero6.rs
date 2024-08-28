@@ -168,6 +168,8 @@ impl Cache for FileCache {
 
 // 런타임에 캐시 구현체를 교체하는 함수
 // cureent_cache의 값을 new_cache로 변경
+// dyn은 러스트에서 트레이트 객체를 사용하기 위해 도입된 키워드
+// 런타임에 특정 트레이트를 구현한 객체에 대한 동적 디스패치를 가능하게 해줌
 fn switch_cache(current_cache: &mut Box<dyn Cache>, new_cache: Box<dyn Cache>) {
     *current_cache = new_cache;
 }
