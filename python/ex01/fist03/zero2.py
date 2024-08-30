@@ -1,7 +1,5 @@
 # 중첩 딕셔너리
 # 딕셔너리는 값으로 다른 딕셔너리를 포함할 수 있음
-from os import name
-
 nested_dict = {
     "student1": {
         "name": "김박사",
