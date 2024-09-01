@@ -7,4 +7,5 @@ func main() {
 	Zero4()
 	Zero5()
 	Zero6()
+	Zero7()
 }
