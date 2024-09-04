@@ -1,1 +1,26 @@
-dd
+파일 생성
+    ni filename
+
+폴더 생성
+    mkdir foldername
+
+파일 삭제
+    rm filename
+
+폴더 삭제
+    rm -r foldername
+
+파일 목록 보기 
+    ls
+
+현재 디렉토리 경로 보기 
+    pwd
+
+파일 내용 보기
+    cat filename 
+
+실행 중인 프로세스 보기 
+    ps
+
+프로세스 종료
+    kill processId
