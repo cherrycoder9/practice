@@ -24,9 +24,10 @@ func (v Vehicle) Description() string {
 	return fmt.Sprintf("제조사: %s, 모델명: %s, 연식: %d", v.Make, v.Model, v.Year)
 }
 
-// Car rnwhcp
+// Car 구조체
 type Car struct {
-	Vehicle     // 임베딩
+	// 필드명을 따로 지정하지 않고 구조체 타입만으로 필드가 정의되는 경우를 임베딩이라고 함
+	Vehicle     // 익명 필드로 임베딩, Vehicle 구조체의 필드나 메서드에 직접 접근할 수 있게됨
 	Seats   int // 좌석수
 }
 
