@@ -133,3 +133,107 @@ pub fn variable_pattern_matching() {
         println!("옵션 타입이 None입니다.");
     }
 }
+
+// 상수
+pub fn constants_usage() {
+    // 상수는 프로그램 전체에서 변하지 않는 값
+    // 주로 고정된 값이나 설정에 사용
+    const PI: f64 = 3.14159265;
+    let radius = 5.0;
+    let circumference = 2.0 * PI * radius;
+    println!("반지름 {}의 원주: {}", radius, circumference);
+}
+
+// 가변 참조와 빌림
+pub fn mutable_reference() {
+    // 가변 참조는 데이터의 소유권을 넘기지 않고
+    // 값을 변경할 수 있는 방법 제공
+    let mut message = String::from("안녕");
+    append_world(&mut message);
+    println!("변경된 메시지: {}", message);
+}
+
+fn append_world(s: &mut String) {
+    s.push_str(", 러스트!");
+}
+
+// 불변 참조와 가변 참조 규칙
+pub fn reference_rules() {
+    // 불변 참조와 가변 참조는 동시에 사용 불가능
+    // 가변 참조는 단일로만 가능
+    let mut data = 100;
+
+    // 불변 참조
+    let r1 = &data;
+    let r2 = &data;
+    println!("불변 참조 r1: {}, r2: {}", r1, r2);
+
+    // 가변 참조는 불변 참조가 끝난 후에만 가능함
+    let r3 = &mut data;
+    println!("가변 참조 r3: {}", r3);
+}
+
+// 변수 재선언과 섀도잉
+pub fn variable_redeclaration() {
+    // 변수 재선언으로 데이터 변환이나 타입 변경을 유연하게 처리
+    let spaces = "       ";
+    println!("초기 spaces: '{}'", spaces);
+
+    // 변수 재선언을 통한 타입 변경
+    let spaces = spaces.len();
+    println!("spaces의 길이: {}", spaces);
+}
+
+// 상수의 메타데이터
+pub fn constants_naming() {
+    // 상수는 항상 대문자와 언더스코어를 사용해 명명함
+    const MAX_SPEED: u32 = 250;
+    println!("최대 속도: {} km/h", MAX_SPEED);
+}
+
+// 스코프 내에서의 가변성 제어
+pub fn mutability_scope() {
+    // 스코프를 통해 가변성 범위를 제한할 수 있음
+    let value = 10;
+    println!("초기 값: {}", value);
+
+    {
+        let mut value = value;
+        value += 5;
+        println!("내부 스코프의 값: {}", value);
+    }
+
+    println!("외부 스코프의 값: {}", value);
+}
+
+// 컴파일 시점의 상수 평가
+pub fn const_evaluation() {
+    // 상수는 컴파일 시점에 평가되어 최적화됨
+    const AREA: u32 = calculate_area(10);
+    println!("정사각형의 면적: {}", AREA);
+}
+
+const fn calculate_area(side: u32) -> u32 {
+    side * side
+}
+
+// 변수의 전역 사용과 제한
+pub fn global_variable() {
+    static GLOBAL_COUNT: u32 = 0;
+    println!("전역 변수 GLOBAL_COUNT: {}", GLOBAL_COUNT);
+
+    // 전역 변수는 변경 불가
+    // GLOBAL_COUNT = 1; // 컴파일 에러
+}
+
+// 변수와 함수 내 가변성
+pub fn function_mutability() {
+    // 함수 내에서 변수의 가변성을 관리해 데이터 일관성을 유지
+    let mut counter = 0;
+    increment(&mut counter);
+    println!("증가된 counter: {}", counter);
+}
+
+fn increment(value: &mut i32) {
+    *value += 1;
+}
