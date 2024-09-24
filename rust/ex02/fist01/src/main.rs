@@ -1,4 +1,6 @@
 mod zero1;
+mod zero2;
+mod zero3;
 fn main() {
     zero1::variable_declaration();
     zero1::immutable_variable();
@@ -19,4 +21,6 @@ fn main() {
     zero1::const_evaluation();
     zero1::global_variable();
     zero1::function_mutability();
+    zero2::main();
+    zero3::main();
 }
