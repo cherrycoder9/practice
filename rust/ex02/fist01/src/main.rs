@@ -2,6 +2,7 @@
 // mod zero2;
 // mod zero3;
 // mod generics;
+mod type_conversion;
 mod type_inference;
 // mod zero4;
 // mod zero5;
@@ -31,4 +32,5 @@ fn main() {
     // zero5::main();
     // generics::main();
     type_inference::main();
+    type_conversion::main();
 }
