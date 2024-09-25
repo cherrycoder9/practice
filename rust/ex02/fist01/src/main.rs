@@ -1,9 +1,10 @@
 // mod zero1;
 // mod zero2;
 // mod zero3;
-mod generics;
-mod zero4;
-mod zero5;
+// mod generics;
+mod type_inference;
+// mod zero4;
+// mod zero5;
 fn main() {
     // zero1::variable_declaration();
     // zero1::immutable_variable();
@@ -26,7 +27,8 @@ fn main() {
     // zero1::function_mutability();
     // zero2::main();
     // zero3::main();
-    zero4::main();
-    zero5::main();
-    generics::main();
+    // zero4::main();
+    // zero5::main();
+    // generics::main();
+    type_inference::main();
 }
