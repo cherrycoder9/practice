@@ -5,6 +5,7 @@
 mod type_alias;
 mod type_conversion;
 mod type_inference;
+mod zero6;
 // mod zero4;
 // mod zero5;
 fn main() {
@@ -35,4 +36,5 @@ fn main() {
     type_inference::main();
     type_conversion::main();
     type_alias::main();
+    zero6::main();
 }
