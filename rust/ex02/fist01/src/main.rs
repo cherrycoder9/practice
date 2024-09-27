@@ -2,10 +2,11 @@
 // mod zero2;
 // mod zero3;
 // mod generics;
-mod type_alias;
-mod type_conversion;
-mod type_inference;
-mod zero6;
+mod shapes_calculator;
+// mod type_alias;
+// mod type_conversion;
+// mod type_inference;
+// mod zero6;
 // mod zero4;
 // mod zero5;
 fn main() {
@@ -33,8 +34,9 @@ fn main() {
     // zero4::main();
     // zero5::main();
     // generics::main();
-    type_inference::main();
-    type_conversion::main();
-    type_alias::main();
-    zero6::main();
+    // type_inference::main();
+    // type_conversion::main();
+    // type_alias::main();
+    // zero6::main();
+    shapes_calculator::main();
 }
