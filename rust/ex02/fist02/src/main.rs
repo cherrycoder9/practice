@@ -5,6 +5,7 @@ use fist02::functions::function_parameters;
 use fist02::functions::function_return;
 use fist02::functions::generic_functions;
 use fist02::functions::generic_trait;
+use fist02::functions::higher_order_functions;
 use fist02::functions::ownership_move;
 fn main() {
     function_parameters::main();
@@ -13,4 +14,5 @@ fn main() {
     borrowing::main();
     generic_functions::main();
     generic_trait::main();
+    higher_order_functions::main();
 }

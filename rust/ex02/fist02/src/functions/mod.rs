@@ -7,4 +7,5 @@ pub mod function_parameters;
 pub mod function_return;
 pub mod generic_functions;
 pub mod generic_trait;
+pub mod higher_order_functions;
 pub mod ownership_move;
