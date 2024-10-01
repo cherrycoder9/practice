@@ -8,6 +8,7 @@ use fist02::functions::generic_functions;
 use fist02::functions::generic_trait;
 use fist02::functions::higher_order_functions;
 use fist02::functions::ownership_move;
+use fist02::functions::recursion_iteration;
 fn main() {
     function_parameters::main();
     function_return::main();
@@ -17,4 +18,5 @@ fn main() {
     generic_trait::main();
     higher_order_functions::main();
     function_pointers_traits::main();
+    recursion_iteration::main();
 }
