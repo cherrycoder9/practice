@@ -3,6 +3,7 @@
     이 모듈 안에 정의된 함수와 구조체를 다른 파일에서 사용할 수 있게 함
 */
 pub mod borrowing;
+pub mod ex01;
 pub mod function_parameters;
 pub mod function_pointers_traits;
 pub mod function_return;
