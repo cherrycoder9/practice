@@ -4,6 +4,7 @@
 */
 pub mod borrowing;
 pub mod function_parameters;
+pub mod function_pointers_traits;
 pub mod function_return;
 pub mod generic_functions;
 pub mod generic_trait;

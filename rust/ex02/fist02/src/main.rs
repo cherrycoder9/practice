@@ -2,6 +2,7 @@
 // use는 이미 선언된 모듈을 가져와서 사용할때 쓰임
 use fist02::functions::borrowing;
 use fist02::functions::function_parameters;
+use fist02::functions::function_pointers_traits;
 use fist02::functions::function_return;
 use fist02::functions::generic_functions;
 use fist02::functions::generic_trait;
@@ -15,4 +16,5 @@ fn main() {
     generic_functions::main();
     generic_trait::main();
     higher_order_functions::main();
+    function_pointers_traits::main();
 }
