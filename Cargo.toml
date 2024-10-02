@@ -1,5 +1,5 @@
 [workspace]
 resolver = "2"
 members = [ 
-    "rust/ex02/fist01", "rust/ex02/fist02", "rust/ex02/fist03",
+    "rust/ex02/fist01", "rust/ex02/fist02", "rust/ex02/fist03", "rust/ex02/fist04",
 ]
