@@ -4,6 +4,7 @@
 */
 pub mod borrowing;
 pub mod ex01;
+pub mod ex02;
 pub mod function_parameters;
 pub mod function_pointers_traits;
 pub mod function_return;
