@@ -1,4 +1,5 @@
 mod result_example;
+mod result_generic;
 
 fn main() {
     /*
@@ -18,4 +19,11 @@ fn main() {
        - 성공과 실패를 나타내는 두 가지 상태인 Ok와 Err을 가짐
     */
     result_example::main();
+
+    /*
+       # Result의 제네릭 타입
+       - Result는 제네릭 타입을 사용해 다양한 데이터 타입과 에러 타입 처리 가능
+       - 일반적인 형식은 Result<T, E>로, T는 성공시 반환되는 값의 타입, E는 에러의 타입
+    */
+    result_generic::main();
 }
