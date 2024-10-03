@@ -1,5 +1,6 @@
 mod option_example;
 mod option_vs_result;
+mod propagate_error;
 mod result_example;
 mod result_generic;
 
@@ -39,4 +40,12 @@ fn main() {
     */
     option_example::main();
     option_vs_result::main();
+
+    /*
+       # 에러 전파와 ? 연산자
+       - 함수가 실행 중에 에러를 만났을 때, 그 에러를 호출한 쪽으로 전달하는 과정
+       - ? 연산자는 Result 타입을 반환하는 함수에서 에러를 간편하게 전파할 수 있는 문법적 편의성
+       - ?를 사용하면 에러 발생시 즉시 함수가 종료되고, 에러가 호출자에게 전달됨
+    */
+    propagate_error::main();
 }
