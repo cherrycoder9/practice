@@ -1,3 +1,5 @@
+mod option_example;
+mod option_vs_result;
 mod result_example;
 mod result_generic;
 
@@ -26,4 +28,15 @@ fn main() {
        - 일반적인 형식은 Result<T, E>로, T는 성공시 반환되는 값의 타입, E는 에러의 타입
     */
     result_generic::main();
+
+    /*
+       # Option 타입과 Result 타입 비교
+       - 두 타입 모두 열거형으로, 값의 유무나 연산의 성공 여부를 나타내는데 사용됨
+       - Option: 값이 있을 수도 있고 없을 수도 있는 상황을 나타냄
+       - 실패의 원인을 명확히 알 필요가 없거나, 단순히 값의 유무만을 확인할 때 사용함
+       - Result: 연산의 성공 여부와 에러의 원인을 명확히 알 필요가 있는 상황에 사용
+       - 에러의 원인을 자세히 처리하거나 전달해야 할 때 적합
+    */
+    option_example::main();
+    option_vs_result::main();
 }
