@@ -1,8 +1,11 @@
+mod custom_error;
+mod implement_error_trait;
 mod option_example;
 mod option_vs_result;
 mod propagate_error;
 mod result_example;
 mod result_generic;
+mod using_custom_error;
 
 fn main() {
     /*
@@ -48,4 +51,14 @@ fn main() {
        - ?를 사용하면 에러 발생시 즉시 함수가 종료되고, 에러가 호출자에게 전달됨
     */
     propagate_error::main();
+
+    /*
+      # 커스텀 에러 타입 정의
+      - 프로젝트의 도메인에 특화된 에러 처리를 위함
+      - struct나 enum을 사용해 에러 타입을 설계하고, std::error::Error 트레이트와
+      - Display, Debug 트레이트를 구현해 에러 가독성 및 디버깅 정보 향상
+    */
+    custom_error::main();
+    implement_error_trait::main();
+    using_custom_error::main();
 }
