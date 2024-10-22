@@ -1,8 +1,8 @@
-package main
+package variables_and_data_types
 
 import "fmt"
 
-func main() {
+func variableDeclaration() {
 	// 1. 기본적인 변수 선언 (명시적 타입 지정)
 	var num int = 10
 	fmt.Println("명시적 타입 변수 선언:", num)
