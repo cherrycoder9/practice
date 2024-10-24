@@ -1,4 +1,4 @@
-package constant_and_literals
+package constants_and_literals
 
 import "fmt"
 
