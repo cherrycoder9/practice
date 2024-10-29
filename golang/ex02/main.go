@@ -2,6 +2,7 @@ package main
 
 import (
 	"ex02/arrays_and_slices"
+	"ex02/maps"
 )
 
 func main() {
@@ -11,4 +12,5 @@ func main() {
 	// loops_for.LoopsFor()
 	// functions_definition_and_call.FunctionsDefinitionAndCall()
 	arrays_and_slices.ArraysAndSlices()
+	maps.Maps()
 }
