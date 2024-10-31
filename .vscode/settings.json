@@ -51,7 +51,9 @@
         "text_encoding": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "xtr1common": "cpp",
+        "xutility": "cpp"
     },
     "python.analysis.autoImportCompletions": true
 }
