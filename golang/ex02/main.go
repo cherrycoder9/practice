@@ -14,4 +14,5 @@ func main() {
 	vehicleInterfaces()
 	typeSwitch()
 	concurrency()
+	channels()
 }
