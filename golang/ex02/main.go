@@ -13,4 +13,5 @@ func main() {
 	anonymousAndClosure()
 	vehicleInterfaces()
 	typeSwitch()
+	concurrency()
 }
