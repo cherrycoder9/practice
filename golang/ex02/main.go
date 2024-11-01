@@ -11,4 +11,5 @@ func main() {
 	// methods_and_receivers.MethodsAndReceivers()
 	deferPanicHandling()
 	anonymousAndClosure()
+	vehicleInterfaces()
 }
