@@ -15,4 +15,5 @@ func main() {
 	typeSwitch()
 	concurrency()
 	channels()
+	selectChannel()
 }
