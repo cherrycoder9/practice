@@ -12,4 +12,5 @@ func main() {
 	deferPanicHandling()
 	anonymousAndClosure()
 	vehicleInterfaces()
+	typeSwitch()
 }
