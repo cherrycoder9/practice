@@ -27,7 +27,7 @@ let fruits: string[] = ["사과", "바나나", "오렌지"];
 fruits.push("포도"); // 배열은 길이가 동적으로 변할 수 있음
 
 // 튜플은 특정한 구조와 순서를 보장해야 하는 경우 적합
-let address: [string, number, string] = ["서울특별시", 12345, "대한민국"];
+let myAddress: [string, number, string] = ["서울특별시", 12345, "대한민국"];
 
 // 특정 데이터 구조를 나타낼 때 배열과 튜플을 혼합해 사용할 수 있음 
 let employees: [string, number][] = [
@@ -37,8 +37,8 @@ let employees: [string, number][] = [
 // 각 직원의 이름과 나이를 튜플로 표현하고, 배열로 관리함
 
 // 직원 목록에서 나이를 기준으로 특정 나이 이상의 직원 이름을 반환하는 함수
-function getEmployeesAboveAge(employees:[string, number][], age:number): string[] {
-    return employees.filter((employee) => employee[1] >= age).map((employee) => employee[0])
+function getEmployeesAboveAge(employees: [string, number][], age: number): string[] {
+    return employees.filter((employee) => employee[1] >= age).map((employee) => employee[0]);
 }
 
 console.log(getEmployeesAboveAge(employees, 30)); // ['김철수']

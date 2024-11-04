@@ -6,7 +6,7 @@ let age = 30;
 // 문자열 타입 주석을 지정해 변수 선언
 let username = "제로디"; // string 타입 주석을 사용해 변수 타입 명시
 // 함수 매개변수와 반환값에 타입 주석을 지정
-function add(a, b) {
+function add1(a, b) {
     return a + b;
 }
 // 타입 추론의 동작 원리
@@ -14,7 +14,7 @@ function add(a, b) {
 let inferredString = "Hello, TypeScript!"; // string 으로 추론함
 let inferredNumber = 42; // number 타입으로 추론
 let explicitType = true;
-function multiply(a, b = 2) {
+function multiply1(a, b = 2) {
     return a * b;
 }
-let result = multiply(5); // multiply 함수 호출시 반환값의 타입이 자동으로 number로 추론됨
+let result = multiply1(5); // multiply 함수 호출시 반환값의 타입이 자동으로 number로 추론됨
