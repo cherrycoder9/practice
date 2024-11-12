@@ -97,13 +97,13 @@ console.log(hasPermission(permission, Permissions2.Read)); // true
 console.log(hasPermission(permission, Permissions2.Execute)); // false
 
 // 열거형 타입을 사용해 함수의 매개변수를 제한해 잘못된 값이 전달되지 않게 함
-function move(direction: Direction): void {
+function move2(direction: Direction): void {
     console.log(`캐릭터가 ${Direction[direction]} 방향으로 이동합니다.`);
 }
 
 console.log("열거형 타입 사용");
-move(Direction.Left);
-// move("위쪽"); // 오류, '위쪽'은 Direction 타입이 아님
+move2(Direction.Left);
+// move2("위쪽"); // 오류, '위쪽'은 Direction 타입이 아님
 
 // TS에서 열거형은 기본적으로 런타임에 실제 객체로 존재함
 // 다른 객체와 마찬가지로 일부 런타임 오버헤드가 발생할 수 있음
