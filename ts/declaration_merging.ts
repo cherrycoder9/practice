@@ -21,14 +21,14 @@ console.log(`병합된 인터페이스 출력: ${JSON.stringify(personDM)}`);
 
 // 2. 함수 오버로드 선언 병합
 // 동일한 이름을 가진 함수 시그니처를 여러 번 정의해 오버로드 기능을 구현할 수 있음
-function add(x: number, y: number): number;
-function add(x: string, y: string): string;
-function add(x: any, y: any): any {
+function addDM(x: number, y: number): number;
+function addDM(x: string, y: string): string;
+function addDM(x: any, y: any): any {
     return x + y; // 실제 구현부에서는 모든 경우를 처리할 수 있도록 any 타입 사용함 
 }
 
-console.log(`숫자 덧셈: ${add(5, 10)}`);
-console.log(`문자열 덧셈: ${add("안녕", "하세요")}`);
+console.log(`숫자 덧셈: ${addDM(5, 10)}`);
+console.log(`문자열 덧셈: ${addDM("안녕", "하세요")}`);
 
 // 3. 모듈 병합
 // 동일한 모듈 이름을 여러 번 선언해 모듈을 병합할 수 있음

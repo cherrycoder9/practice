@@ -5,11 +5,11 @@ const personDM = {
     gender: "남성"
 };
 console.log(`병합된 인터페이스 출력: ${JSON.stringify(personDM)}`);
-function add(x, y) {
+function addDM(x, y) {
     return x + y; // 실제 구현부에서는 모든 경우를 처리할 수 있도록 any 타입 사용함 
 }
-console.log(`숫자 덧셈: ${add(5, 10)}`);
-console.log(`문자열 덧셈: ${add("안녕", "하세요")}`);
+console.log(`숫자 덧셈: ${addDM(5, 10)}`);
+console.log(`문자열 덧셈: ${addDM("안녕", "하세요")}`);
 // 3. 모듈 병합
 // 동일한 모듈 이름을 여러 번 선언해 모듈을 병합할 수 있음
 // Node.js와 같은 환경에선 모듈 시스템이 다르므로 모듈 병합이 TS와 다르게 작동할 수 있음
