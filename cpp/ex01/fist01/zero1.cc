@@ -50,6 +50,7 @@ int main(int argc, char const *argv[]) {
     cout << *ptr << endl;
 
     *ptr = 60;  // 포인터를 통해 m의 값을 변경함
+    cout << "호호" << endl;
     cout << m << endl;
     cout << *ptr << endl;
 
