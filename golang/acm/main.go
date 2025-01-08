@@ -1,22 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	var a, b int
-	_, _ = fmt.Scan(&a, &b)
-
-	if a > 0 {
-		if b > 0 {
-			fmt.Println("1")
-		} else {
-			fmt.Println("4")
-		}
-	} else {
-		if b > 0 {
-			fmt.Println("2")
-		} else {
-			fmt.Println("3")
-		}
-	}
+	// 현재 시각 가져오기
+	currentTime := time.Now()
+	// 현재 시각 출력
+	fmt.Println("현재 시각:", currentTime)
+	fmt.Println("현재 시각:", currentTime.Format("2006-01-02 15:04:05"))
 }
