@@ -6,11 +6,9 @@ import (
 )
 
 func main() {
-	text := "apple,orange,banana"
-	separator := ","
+	url := "https://www.naver.com"
 
-	// 문자열 분리
-	parts := strings.Split(text, separator)
-
-	fmt.Println(parts) // [apple orange banana]
+	if strings.HasPrefix(url, "https://") {
+		fmt.Println("암호화된 프로토콜입니다.")
+	}
 }
