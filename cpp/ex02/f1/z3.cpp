@@ -20,11 +20,11 @@ int main() {
 
     // C++11 이전에는 긴 템플릿 타입의 가독성을 높이기 위해 typedef를 사용하는 방법이 있었음
     // 복잡한 맵 타입을 별칭으로 정의하는 방법은 아래와 같았음
-    typedef map<string, complex<double>> complex_map;
+    typedef map<string, complex<double> > complex_map;
 
     // C++11 이후 using 문은 같은 작업을 더 자연스러운 문법으로 수행할 수 있도록 확장됨
     // using은 고급 템플릿 기법에서도 더 유연하게 동작함
-    using complex_map2 = map<string, complex<double>>;
+    using complex_map2 = map<string, complex<double> >;
 
     // C++11에서 도입된 통합 초기화는 중괄호를 사용해 객체를 초기화하는 새로운 방법
     int i{100}; // int i = 100; 과 같음
@@ -37,6 +37,7 @@ int main() {
     // 벡터에서 요소 개수 초기화
     // 벡터의 크기를 명시적으로 지정하려면 소괄호 초기화를 사용하면 됨
     vector<int> vec(2); // 크기가 2인 벡터 생성
+
 
     return 0;
 }
