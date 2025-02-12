@@ -5,3 +5,5 @@
 **/node_modules/
 **/target/
 **/*.lock
+**/.zig-cache/
+**/cache.*
